@@ -240,6 +240,45 @@ class HeritageAudioEngine {
     this.playbackRate = rate;
   }
 
+  // Gảy một nốt Đàn Tính đơn lẻ (dành cho mô phỏng tương tác)
+  pluckString(pitchKey = "A3") {
+    this.initAudioContext();
+    const freq = this.pitches[pitchKey] || 440;
+    this.playPluckNote(freq, 2.0);
+  }
+
+  playPluckNote(frequency, duration = 2.0) {
+    if (!this.audioCtx) this.initAudioContext();
+    const now = this.audioCtx.currentTime;
+
+    const osc1 = this.audioCtx.createOscillator();
+    const osc2 = this.audioCtx.createOscillator();
+    osc1.type = "triangle";
+    osc2.type = "sine";
+    osc1.frequency.setValueAtTime(frequency, now);
+    osc2.frequency.setValueAtTime(frequency * 2, now);
+
+    const filter = this.audioCtx.createBiquadFilter();
+    filter.type = "bandpass";
+    filter.frequency.setValueAtTime(frequency * 1.5, now);
+    filter.Q.setValueAtTime(3.5, now);
+
+    const env = this.audioCtx.createGain();
+    env.gain.setValueAtTime(0.001, now);
+    env.gain.linearRampToValueAtTime(0.4, now + 0.015);
+    env.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+    osc1.connect(filter);
+    osc2.connect(filter);
+    filter.connect(env);
+    env.connect(this.gainNode);
+
+    osc1.start(now);
+    osc2.start(now);
+    osc1.stop(now + duration);
+    osc2.stop(now + duration);
+  }
+
   // Bật tắt chế độ lặp lại
   toggleLoop() {
     this.isLooping = !this.isLooping;

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyBK" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027" />
+      <stop offset="60%" stop-color="#203A43" />
+      <stop offset="100%" stop-color="#2C5364" />
+    </linearGradient>
+    <linearGradient id="lakeBK" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C5364" />
+      <stop offset="50%" stop-color="#1B4332" />
+      <stop offset="100%" stop-color="#081C15" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#skyBK)" />
+  <!-- Ba Be Lake limestone mountains reflecting -->
+  <path d="M 0,180 Q 90,60 180,180 Q 270,90 360,180 Q 480,40 600,180 L 600,300 L 0,300 Z" fill="#1C2D42" opacity="0.8" />
+  <!-- Lake Surface -->
+  <rect y="170" width="600" height="130" fill="url(#lakeBK)" />
+  <!-- An Ma / Ba Goa Island silhouette -->
+  <ellipse cx="230" cy="200" rx="45" ry="15" fill="#2D6A4F" />
+  <path d="M 200,200 Q 230,170 260,200 Z" fill="#1B4332" />
+  <!-- Dugout Boat (Thuyền đuôi én Tày Ba Bể) with rower silhouette -->
+  <g transform="translate(340, 210) scale(0.9)">
+    <!-- Slender canoe hull -->
+    <path d="M 0,15 C 30,22 90,22 120,15 C 90,18 30,18 0,15 Z" fill="#D4AF37" stroke="#3D2314" stroke-width="1.5" />
+    <!-- Tày Woman with indigo conic hat and paddle -->
+    <circle cx="50" cy="4" r="5" fill="#FAF6F0" />
+    <path d="M 40,2 L 60,2 L 50,-4 Z" fill="#3D2314" /> <!-- Hat -->
+    <path d="M 47,8 L 53,8 L 55,18 L 45,18 Z" fill="#1C2D42" />
+    <line x1="52" y1="10" x2="68" y2="28" stroke="#D4AF37" stroke-width="2" />
+  </g>
+  <!-- Foreground Trim -->
+  <line x1="0" y1="294" x2="600" y2="294" stroke="#D4AF37" stroke-width="3" />
+  <text x="30" y="50" font-family="'Noto Serif', serif" font-weight="bold" font-size="28" fill="#FAF6F0">BẮC KẠN</text>
+  <text x="30" y="75" font-family="sans-serif" font-size="14" fill="#D4AF37" letter-spacing="2">LƯỢN HÀ LỀU BA BỂ &amp; CHỢ TÌNH XUÂN DƯƠNG</text>
+</svg>
+

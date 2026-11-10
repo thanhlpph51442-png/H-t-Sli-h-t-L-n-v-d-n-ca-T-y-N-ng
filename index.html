@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THANH ÂM SLI – LƯỢN | DI SẢN DÂN CA TÀY NÙNG</title>
+  <meta name="description" content="Cổng thông tin số hóa, lưu trữ và tôn vinh những làn điệu dân ca truyền thống hát Sli, hát Lượn của cộng đồng người Tày và người Nùng tại Việt Nam." />
+
+  <!-- Google Fonts: Be Vietnam Pro & Noto Serif (Hỗ trợ tiếng Việt và ký tự phiên âm trọn vẹn) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="topHeader">
+    <div class="brocade-border"></div>
+    <div class="container">
+      <div class="nav-wrapper">
+        <!-- Logo & Branding -->
+        <a href="#trang-chu" class="brand-logo" title="Trở về Trang chủ">
+          <div class="brand-icon-box">
+            <i class="fas fa-drum-steelpan"></i>
+          </div>
+          <div class="brand-text">
+            <h1>THANH ÂM SLI – LƯỢN</h1>
+            <span>DI SẢN DÂN CA TÀY NÙNG</span>
+          </div>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#trang-chu" class="nav-link active"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="#thu-vien-loi-ca" class="nav-link"><i class="fas fa-book-open"></i> Thư viện lời ca</a></li>
+            <li><a href="#kho-am-thanh" class="nav-link"><i class="fas fa-headphones"></i> Kho âm thanh</a></li>
+            <li><a href="#van-hoa-dien-xuong" class="nav-link"><i class="fas fa-campground"></i> Văn hóa &amp; Diễn xướng</a></li>
+            <li><a href="#vung-mien" class="nav-link"><i class="fas fa-map-marked-alt"></i> Vùng miền</a></li>
+            <li><a href="#gioi-thieu" class="nav-link"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="nav-actions">
+          <a href="https://github.com/thanhlpph51442-png/H-t-Sli-h-t-L-n-v-d-n-ca-T-y-N-ng" target="_blank" rel="noopener noreferrer" class="btn-github-nav" title="Mã nguồn dự án trên GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <button class="btn-contribute-nav" id="btnOpenContribute" title="Đóng góp bài hát, lời ca hoặc bản ghi âm">
+            <i class="fas fa-plus-circle"></i> Đóng góp tư liệu
+          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Mở trình đơn chuyển trang">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO BANNER SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="trang-chu">
+    <div class="hero-backdrop-pattern"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Inspiring Headline & Call to Action -->
+        <div class="hero-content">
+          <div class="hero-badge-tag">
+            <i class="fas fa-award"></i> Di sản Văn hóa Phi vật thể Quốc gia
+          </div>
+          <h2 class="hero-title">
+            THANH ÂM <span class="highlight-gold">SLI – LƯỢN</span>
+          </h2>
+          <div class="hero-slogan">
+            “Lưu giữ tiếng hát – Gìn giữ hồn văn hóa Tày Nùng”
+          </div>
+          <p class="hero-desc">
+            Không gian số hóa, lưu trữ và tôn vinh những làn điệu Sli đối bè mộc mạc của người Nùng cùng những khúc Lượn trữ tình vút cao theo tiếng đàn Tính của người Tày. Nơi kết nối quá khứ với hiện tại qua từng câu hát trao duyên giữa non ngàn Đông Bắc.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#kho-am-thanh" class="btn-primary" id="btnHeroListen">
+              <i class="fas fa-play"></i> Nghe làn điệu di sản
+            </a>
+            <a href="#thu-vien-loi-ca" class="btn-secondary">
+              <i class="fas fa-search"></i> Khám phá thư viện lời ca
+            </a>
+            <button class="btn-secondary" id="btnOpenContributeHero" style="border-color: var(--color-gold);">
+              <i class="fas fa-feather-alt"></i> Đóng góp lời ca
+            </button>
+          </div>
+
+          <!-- Quick Heritage Stats -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Làn điệu phục dựng</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">05</span>
+              <span class="stat-label">Vùng văn hóa Đông Bắc</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Bảo tồn phi lợi nhuận</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Đàn Tính & Indigenous Instrument Showcase -->
+        <div class="hero-visual-card">
+          <img src="assets/images/dan-tinh-hero.svg" alt="Cây Đàn Tính Tày và Tua rua chỉ ngũ sắc" class="hero-instrument-img" />
+          <div class="hero-visual-caption">
+            <h4>Tính tẩu (Đàn Tính) &amp; Áo Chàm</h4>
+            <p>Hồn cốt âm nhạc Tày – Nùng: Cần gỗ dâu thon dài, bầu bí già phơi khói và hai dây tơ ngân nga vạn dặm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brocade Divider -->
+  <div class="brocade-border"></div>
+
+  <!-- ==========================================================================
+       GIỚI THIỆU NGẮN VỀ HÁT SLI VÀ HÁT LƯỢN
+       ========================================================================== -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Tinh hoa diễn xướng dân gian</span>
+        <h3 class="section-title">Hai dòng chảy lớn: <span>Hát Sli &amp; Hát Lượn</span></h3>
+        <p class="section-desc">
+          Nếu Sli của người Nùng là nghệ thuật hát bè mộc mạc, đa thanh đầy nội lực giữa vách đá thung lũng, thì Lượn của người Tày lại là khúc tự tình trau chuốt, đằm thắm bên phím đàn Tính tẩu ngân rung.
+        </p>
+        <div class="header-accent-line">
+          <i class="fas fa-sparkles header-accent-icon"></i>
+        </div>
+      </div>
+
+      <div class="intro-grid">
+        <!-- Card: Hát Sli (Dân tộc Nùng) -->
+        <div class="intro-card">
+          <div class="intro-card-header sli-style">
+            <div class="intro-card-title">
+              <h3>HÁT SLI</h3>
+              <span>Dân ca độc đáo của Dân tộc Nùng</span>
+            </div>
+            <div class="intro-card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="intro-card-body">
+            <p>
+              Hát Sli là viên ngọc quý trong kho tàng văn nghệ dân gian Việt Nam. Điểm đặc sắc nhất của Sli là <strong>lối hát đối đáp nhiều bè tự nhiên không cần bất kỳ nhạc cụ nào đệm theo</strong>.
+            </p>
+            <ul class="intro-feature-list">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Lối hát đa thanh:</strong> Hai tốp nam - nữ đối đáp; một người hát bè chính (Bắt lờn), người kia hòa bè phụ (Táng lờn) cao hơn quãng 3 hoặc quãng 5 tự nhiên.</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Các làn điệu nổi tiếng:</strong> Sli Giang (Văn Quan), Sli Sình Làng (Cao Lộc), Sli Phan Slinh (Lộc Bình), Sli Nùng Dín (Hoàng Su Phì), Sli Xuân Dương (Na Rì).</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Không gian diễn xướng:</strong> Chợ phiên Kỳ Lừa, chợ tình Xuân Dương, ven suối, triền đồi, lán nương ngô và đêm trăng hội làng.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="intro-card-footer">
+            <span style="font-size: 0.85rem; color: var(--color-text-secondary);"><i class="fas fa-map-pin" style="color: var(--color-red);"></i> Trọng điểm: Lạng Sơn, Bắc Kạn, Hà Giang</span>
+            <a href="#thu-vien-loi-ca" class="btn-card-lyrics" style="padding: 6px 12px; font-size: 0.82rem;">Xem các bài Sli</a>
+          </div>
+        </div>
+
+        <!-- Card: Hát Lượn (Dân tộc Tày) -->
+        <div class="intro-card">
+          <div class="intro-card-header luon-style">
+            <div class="intro-card-title">
+              <h3>HÁT LƯỢN</h3>
+              <span>Khúc tình ca giao duyên Dân tộc Tày</span>
+            </div>
+            <div class="intro-card-icon">
+              <i class="fas fa-music"></i>
+            </div>
+          </div>
+          <div class="intro-card-body">
+            <p>
+              Lượn là đỉnh cao trữ tình đối đáp của người Tày, được gieo vần nghiêm cẩn theo thể thơ 7 chữ hoặc 5 chữ (vần trắc, vần bằng kết hợp giữa vần chân và vần lưng).
+            </p>
+            <ul class="intro-feature-list">
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Thể thức thơ tinh tế:</strong> Thất ngôn lượn với luật gieo vần vi tế; diễn xướng kết hợp nhuần nhuyễn giữa hát mộc và hòa tấu đàn Tính tẩu (Tính then).</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Các làn điệu nổi tiếng:</strong> Lượn Slương (Lượn thương tha thiết), Lượn Cọi (bay bổng Bản Giốc, Chiêm Hóa), Lượn Nàng Hai (nghi lễ cầu mùa), Lượn Quan Làng (đám cưới Tày).</div>
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i>
+                <div><strong>Không gian diễn xướng:</strong> Bên bếp lửa nhà sàn thâu đêm, hội Lồng Tồng (xuống đồng), nghi lễ đám cưới vượt dải chỉ đỏ và trên mặt nước hồ Ba Bể.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="intro-card-footer">
+            <span style="font-size: 0.85rem; color: var(--color-text-secondary);"><i class="fas fa-map-pin" style="color: var(--color-red);"></i> Trọng điểm: Cao Bằng, Tuyên Quang, Bắc Kạn</span>
+            <a href="#thu-vien-loi-ca" class="btn-card-lyrics" style="padding: 6px 12px; font-size: 0.82rem;">Xem các bài Lượn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CÁC LÀN ĐIỆU NỔI BẬT (FEATURED SONGS)
+       ========================================================================== -->
+  <section class="section-wrapper alt-bg">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Tuyển tập tiêu biểu</span>
+        <h3 class="section-title">Các Làn Điệu <span>Nổi Bật Nhất</span></h3>
+        <p class="section-desc">Những kiệt tác dân ca được lưu truyền qua nhiều thế hệ đồng bào Tày – Nùng, thấm đượm triết lý nhân sinh và tình yêu quê hương đất nước.</p>
+        <div class="header-accent-line">
+          <i class="fas fa-feather-alt header-accent-icon"></i>
+        </div>
+      </div>
+
+      <div class="featured-grid" id="featuredGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BẢN GHI ÂM ĐƯỢC NGHE NHIỀU & BÀI HÁT MỚI SƯU TẦM
+       ========================================================================== -->
+  <section class="section-wrapper">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <!-- Top Listened Audio -->
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-indigo);"><i class="fas fa-fire-alt" style="color: var(--color-red); margin-right: 8px;"></i> Nghe nhiều nhất</h4>
+            <a href="#kho-am-thanh" style="font-size: 0.88rem; color: var(--color-red); font-weight: 600; text-decoration: none;">Xem tất cả kho âm thanh &rarr;</a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;" id="topAudioGrid">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+
+        <!-- Newly Collected Songs -->
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <h4 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-indigo);"><i class="fas fa-history" style="color: var(--color-forest); margin-right: 8px;"></i> Mới sưu tầm &amp; số hóa</h4>
+            <a href="#thu-vien-loi-ca" style="font-size: 0.88rem; color: var(--color-indigo); font-weight: 600; text-decoration: none;">Xem toàn bộ thư viện &rarr;</a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 16px;" id="recentGrid">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brocade Divider -->
+  <div class="brocade-border"></div>
+
+  <!-- ==========================================================================
+       THƯ VIỆN LỜI CA SLI – LƯỢN (CORE FEATURE 1)
+       ========================================================================== -->
+  <section class="section-wrapper" id="thu-vien-loi-ca">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Kho tàng văn học dân gian</span>
+        <h3 class="section-title">Thư Viện <span>Lời Ca Sli – Lượn</span></h3>
+        <p class="section-desc">
+          Tra cứu, tìm hiểu lời ca trọn vẹn với 3 cột độc lập: <strong>Tiếng dân tộc nguyên bản</strong>, <strong>Phiên âm tiếng Việt</strong> và <strong>Bản dịch nghĩa tiếng Việt</strong>, kèm đầy đủ thông tin nguồn gốc, nghệ nhân và địa phương lưu truyền.
+        </p>
+        <div class="header-accent-line">
+          <i class="fas fa-book header-accent-icon"></i>
+        </div>
+      </div>
+
+      <!-- Filter & Search Toolbar -->
+      <div class="library-filter-panel">
+        <div class="filter-search-row">
+          <div class="search-input-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="librarySearchInput" class="search-input" placeholder="Tìm theo tên bài hát, lời ca, nghệ nhân, nguồn tư liệu..." />
+          </div>
+
+          <div>
+            <select id="genreSelectFilter" class="filter-select" style="width: 100%;">
+              <option value="all">Tất cả thể loại</option>
+              <option value="Sli">Dân ca Sli (Dân tộc Nùng)</option>
+              <option value="Lượn">Dân ca Lượn (Dân tộc Tày)</option>
+            </select>
+          </div>
+
+          <div>
+            <select id="regionSelectFilter" class="filter-select" style="width: 100%;">
+              <option value="all">Tất cả địa phương</option>
+              <option value="Cao Bằng">Cao Bằng</option>
+              <option value="Lạng Sơn">Lạng Sơn</option>
+              <option value="Bắc Kạn">Bắc Kạn</option>
+              <option value="Tuyên Quang">Tuyên Quang</option>
+              <option value="Hà Giang">Hà Giang</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Quick Filter Pills -->
+        <div class="filter-pills-row">
+          <span class="filter-pill-label">Lọc nhanh:</span>
+          <button class="filter-pill-btn genre-pill active" data-genre="all">Tất cả làn điệu</button>
+          <button class="filter-pill-btn genre-pill" data-genre="Sli">Hát Sli đối bè</button>
+          <button class="filter-pill-btn genre-pill" data-genre="Lượn">Hát Lượn giao duyên</button>
+        </div>
+      </div>
+
+      <div class="library-results-counter" id="resultsCount">
+        Đang hiển thị danh sách bài hát...
+      </div>
+
+      <!-- Library Grid -->
+      <div class="featured-grid" id="libraryGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KHO BẢN GHI ÂM DÂN CA (CORE FEATURE 2)
+       ========================================================================== -->
+  <section class="section-wrapper alt-bg" id="kho-am-thanh">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Lưu trữ thính giác &amp; Diễn xướng</span>
+        <h3 class="section-title">Kho Bản Ghi Âm <span>Dân Ca Tày Nùng</span></h3>
+        <p class="section-desc">
+          Nghe trực tiếp các làn điệu Sli Giang, Sli Sình Làng, Lượn Slương, Lượn Cọi và tiếng đàn Tính tẩu. Hỗ trợ trình phát đa năng: tạm dừng, tua lại, điều chỉnh âm lượng, hiển thị sóng âm sống động.
+        </p>
+        <div class="header-accent-line">
+          <i class="fas fa-waveform-path header-accent-icon"></i>
+        </div>
+      </div>
+
+      <!-- Audio Vault Table -->
+      <div class="audio-vault-table-wrap">
+        <div style="background: var(--color-indigo); color: var(--color-gold-light); padding: 14px 20px; font-weight: 700; font-size: 0.88rem; display: grid; grid-template-columns: 50px 2.5fr 1.2fr 1fr 100px 140px;">
+          <div>PHÁT</div>
+          <div>TÊN BÀI HÁT &amp; THỂ LOẠI</div>
+          <div>NGHỆ NHÂN TRUYỀN KHẨU</div>
+          <div>ĐỊA PHƯƠNG</div>
+          <div>THỜI LƯỢNG</div>
+          <div style="text-align: right;">THAO TÁC</div>
+        </div>
+
+        <div id="vaultTableBody">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <div style="margin-top: 18px; font-size: 0.82rem; color: var(--color-text-secondary); text-align: center; font-style: italic;">
+        <i class="fas fa-info-circle" style="color: var(--color-gold-dark);"></i> Bản quyền: Ưu tiên sử dụng bản ghi âm thực tế từ nghệ nhân và cộng đồng. Một số bản mẫu được phục dựng cao độ bằng công nghệ âm thanh Web Audio API mô phỏng chân thực cao độ ngũ cung Tày và âm hưởng bè kép Nùng.
+      </div>
+    </div>
+  </section>
+
+  <!-- Brocade Divider -->
+  <div class="brocade-border"></div>
+
+  <!-- ==========================================================================
+       CHÚ GIẢI BỐI CẢNH DIỄN XƯỚNG (CORE FEATURE 3)
+       ========================================================================== -->
+  <section class="section-wrapper" id="van-hoa-dien-xuong">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Nghi thức &amp; Đời sống cộng đồng</span>
+        <h3 class="section-title">Bối Cảnh Diễn Xướng &amp; <span>Phong Tục Hát Đối</span></h3>
+        <p class="section-desc">
+          Khám phá không gian văn hóa, bối cảnh tâm linh, nghi thức hôn nhân và trình tự 6 chặng của một cuộc hát đối đáp chuẩn mực của người Tày – Nùng từ chiều hôm trước đến bình minh hôm sau.
+        </p>
+        <div class="header-accent-line">
+          <i class="fas fa-landmark header-accent-icon"></i>
+        </div>
+      </div>
+
+      <div class="context-layout">
+        <!-- Left: 7 Chapter Nav Buttons -->
+        <div>
+          <ul class="context-nav-list" id="contextNavList">
+            <!-- Rendered by app.js -->
+          </ul>
+        </div>
+
+        <!-- Right: Interactive Reading Display -->
+        <div class="context-content-display" id="contextContentDisplay">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KHÁM PHÁ VĂN HÓA THEO VÙNG MIỀN (CORE FEATURE 4)
+       ========================================================================== -->
+  <section class="section-wrapper alt-bg" id="vung-mien">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Địa lý văn hóa Đông Bắc</span>
+        <h3 class="section-title">Khám Phá Văn Hóa <span>Theo Vùng Miền</span></h3>
+        <p class="section-desc">
+          Mỗi vùng đất mang một sắc thái âm nhạc riêng biệt: không khẳng định mọi địa phương đều có cùng một cách hát, mà tôn trọng sự đa dạng tinh tế về tiết tấu, lối nhả chữ và phong tục của từng cộng đồng.
+        </p>
+        <div class="header-accent-line">
+          <i class="fas fa-map header-accent-icon"></i>
+        </div>
+      </div>
+
+      <!-- Region Switcher Tabs -->
+      <div class="region-tabs-row" id="regionTabsRow">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Active Region Showcase -->
+      <div id="regionShowcaseDisplay">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brocade Divider -->
+  <div class="brocade-border"></div>
+
+  <!-- ==========================================================================
+       GIỚI THIỆU & TÔN CHỈ BẢO TỒN (CORE FEATURE 5)
+       ========================================================================== -->
+  <section class="section-wrapper" id="gioi-thieu">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-eyebrow">Sứ mệnh gìn giữ</span>
+          <h3>Gìn Giữ Hồn Di Sản Cho Thế Hệ Trẻ</h3>
+          <p>
+            Dự án <strong>“THANH ÂM SLI – LƯỢN | DI SẢN DÂN CA TÀY NÙNG”</strong> được khởi xướng với mục tiêu xây dựng một không gian số mở, lưu giữ nguyên vẹn lời ca cổ, hệ thống ký âm và các bản thu âm điền dã quý giá của đồng bào Tày và Nùng.
+          </p>
+          <p>
+            Trước nguy cơ mai một của các hình thức hát truyền thống trong nhịp sống hiện đại, website đóng vai trò như một cầu nối số, giúp thế hệ trẻ dễ dàng tiếp cận, học hỏi, trân quý và cùng chung tay tiếp nối ngọn lửa di sản mà cha ông đã truyền qua bao đời.
+          </p>
+
+          <div class="about-principles">
+            <div class="principle-box">
+              <h4><i class="fas fa-check" style="color: var(--color-gold);"></i> Tôn Trọng Bản Thể</h4>
+              <p>Giữ nguyên lời ca tiếng dân tộc, không cải biên làm biến dạng ý nghĩa nguyên bản.</p>
+            </div>
+            <div class="principle-box">
+              <h4><i class="fas fa-shield-alt" style="color: var(--color-red);"></i> Ghi Rõ Cội Nguồn</h4>
+              <p>Mỗi tư liệu đều ghi danh nghệ nhân truyền khẩu, người sưu tầm và cơ quan lưu trữ.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Community Contribution Box -->
+        <div class="contribution-callout-card">
+          <i class="fas fa-hands-helping" style="font-size: 3rem; color: var(--color-gold); margin-bottom: 16px;"></i>
+          <h4>Chung Tay Lưu Giữ Lời Ca Dân Gian</h4>
+          <p>
+            Bạn có bản ghi âm điền dã, lời ca Sli – Lượn của quê hương hoặc những câu chuyện dân gian chưa được số hóa? Hãy chia sẻ cùng chúng tôi để làm giàu thêm kho tàng văn hóa chung của dân tộc.
+          </p>
+          <button class="btn-primary" id="btnOpenContributeBottom" onclick="document.getElementById('contributeModal').classList.add('open'); document.body.style.overflow='hidden';">
+            <i class="fas fa-cloud-upload-alt"></i> Gửi tư liệu sưu tầm ngay
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL 1: ĐỌC VÀ SO SÁNH LỜI CA 3 CỘT (LYRIC COMPARATOR)
+       ========================================================================== -->
+  <div class="modal-overlay" id="lyricModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="modalTitle">Tên bài hát dân ca</h3>
+          <span id="modalMeta">Thể loại • Dân tộc • Địa phương</span>
+        </div>
+        <div class="modal-header-actions">
+          <button class="btn-modal-close" id="btnModalClose" aria-label="Đóng bảng lời ca">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Toolbar -->
+      <div class="modal-toolbar">
+        <div class="font-size-controls">
+          <span><i class="fas fa-font"></i> Cỡ chữ:</span>
+          <button class="btn-size-toggle" data-size="sm">Nhỏ</button>
+          <button class="btn-size-toggle active" data-size="md">Vừa</button>
+          <button class="btn-size-toggle" data-size="lg">Lớn</button>
+        </div>
+
+        <div class="modal-tool-buttons">
+          <button class="btn-tool-action btn-play-now" id="btnModalPlay">
+            <i class="fas fa-play"></i> Nghe bài này
+          </button>
+          <button class="btn-tool-action" id="btnCopyLyrics">
+            <i class="fas fa-copy"></i> Sao chép lời ca &amp; trích dẫn
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (3 Columns) -->
+      <div class="modal-body font-md">
+        <!-- Song Summary Metadata -->
+        <div class="lyric-meta-summary" id="modalMetaSummary"></div>
+
+        <!-- 3 Columns Grid -->
+        <div class="comparator-grid">
+          <!-- Column 1: Original Ethnic Language -->
+          <div class="comparator-column col-original">
+            <div class="column-header">
+              <h4>1. TIẾNG DÂN TỘC NGUYÊN BẢN</h4>
+              <span>Chữ Tày / Nùng Latinh &amp; Nôm Tày</span>
+            </div>
+            <div class="lyric-lines-container" id="modalColOriginal"></div>
+          </div>
+
+          <!-- Column 2: Vietnamese Phonetics -->
+          <div class="comparator-column col-phonetic">
+            <div class="column-header">
+              <h4>2. PHIÊN ÂM TIẾNG VIỆT</h4>
+              <span>Hướng dẫn phát âm chuẩn thanh điệu</span>
+            </div>
+            <div class="lyric-lines-container" id="modalColPhonetic"></div>
+          </div>
+
+          <!-- Column 3: Vietnamese Meaning Translation -->
+          <div class="comparator-column col-translation">
+            <div class="column-header">
+              <h4>3. BẢN DỊCH NGHĨA TIẾNG VIỆT</h4>
+              <span>Ý nghĩa văn học &amp; cảm xúc truyền tải</span>
+            </div>
+            <div class="lyric-lines-container" id="modalColTranslation"></div>
+          </div>
+        </div>
+
+        <!-- Copyright & Citation Footer -->
+        <div class="modal-citation-footer" id="modalCitation"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: ĐÓNG GÓP TƯ LIỆU SƯU TẦM DÂN GIAN
+       ========================================================================== -->
+  <div class="modal-overlay" id="contributeModal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 760px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3>ĐÓNG GÓP TƯ LIỆU SƯU TẦM DÂN CA</h3>
+          <span>Chung tay bảo tồn di sản Tày – Nùng</span>
+        </div>
+        <button class="btn-modal-close" id="btnCloseContribute" aria-label="Đóng mẫu đóng góp">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" style="padding: 24px;">
+        <form id="contributeForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="songTitle">Tên bài hát dân ca *</label>
+              <input type="text" id="songTitle" name="songTitle" class="form-control" placeholder="Ví dụ: Lượn Slương bên dòng sông Bằng" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="songGenre">Thể loại *</label>
+              <select id="songGenre" name="songGenre" class="form-control" required>
+                <option value="Sli">Hát Sli (Dân tộc Nùng)</option>
+                <option value="Lượn">Hát Lượn (Dân tộc Tày)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="songSubGenre">Tiểu loại chi tiết</label>
+              <input type="text" id="songSubGenre" name="songSubGenre" class="form-control" placeholder="Sli Giang, Lượn Cọi, v.v." />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="songEthnic">Dân tộc *</label>
+              <select id="songEthnic" name="songEthnic" class="form-control">
+                <option value="Tày">Dân tộc Tày</option>
+                <option value="Nùng">Dân tộc Nùng</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="songRegion">Địa phương lưu truyền *</label>
+              <select id="songRegion" name="songRegion" class="form-control">
+                <option value="Cao Bằng">Cao Bằng</option>
+                <option value="Lạng Sơn">Lạng Sơn</option>
+                <option value="Bắc Kạn">Bắc Kạn</option>
+                <option value="Tuyên Quang">Tuyên Quang</option>
+                <option value="Hà Giang">Hà Giang</option>
+                <option value="Khác">Địa phương khác</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="songArtisan">Nghệ nhân truyền khẩu / thể hiện</label>
+              <input type="text" id="songArtisan" name="songArtisan" class="form-control" placeholder="Tên nghệ nhân cao tuổi trong bản" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="songCollector">Người cung cấp / Sưu tầm</label>
+              <input type="text" id="songCollector" name="songCollector" class="form-control" placeholder="Tên bạn hoặc nhà nghiên cứu" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="songOriginal">Lời ca nguyên bản tiếng dân tộc (mỗi dòng 1 câu) *</label>
+            <textarea id="songOriginal" name="songOriginal" class="form-control" rows="3" placeholder="Nhập lời ca chữ Tày hoặc chữ Nùng..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="songPhonetic">Phiên âm tiếng Việt (mỗi dòng 1 câu)</label>
+            <textarea id="songPhonetic" name="songPhonetic" class="form-control" rows="3" placeholder="Phiên âm cách đọc tiếng Việt dễ hiểu..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="songTranslation">Bản dịch nghĩa tiếng Việt *</label>
+            <textarea id="songTranslation" name="songTranslation" class="form-control" rows="3" placeholder="Bản dịch thơ hoặc dịch nghĩa văn xuôi truyền cảm..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="songContext">Bối cảnh diễn xướng &amp; Câu chuyện đi kèm</label>
+            <textarea id="songContext" name="songContext" class="form-control" rows="2" placeholder="Hát trong dịp nào? (Hội xuân, bên bếp lửa, đám cưới, mừng nhà mới...)"></textarea>
+          </div>
+
+          <div style="text-align: right; margin-top: 20px;">
+            <button type="submit" class="btn-primary" style="padding: 11px 26px;">
+              <i class="fas fa-check"></i> Lưu vào kho di sản
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PERSISTENT BOTTOM AUDIO PLAYER (CORE FEATURE 6)
+       ========================================================================== -->
+  <aside class="master-audio-player" id="masterAudioPlayer" aria-label="Trình phát âm thanh di sản">
+    <div class="container">
+      <div class="player-grid">
+        <!-- Left: Current Track Info -->
+        <div class="player-track-info">
+          <div class="player-track-art player-art-icon" id="playerArtIcon">
+            <i class="fas fa-music"></i>
+          </div>
+          <div class="player-track-details">
+            <div class="player-track-title" id="playerTrackTitle">Đang tải làn điệu...</div>
+            <div class="player-track-subtitle" id="playerTrackSubtitle">Di sản Dân ca Tày Nùng</div>
+          </div>
+        </div>
+
+        <!-- Center: Playback Controls & Interactive Timeline -->
+        <div class="player-center-controls">
+          <div class="player-buttons-row">
+            <!-- Loop -->
+            <button class="btn-player-ctrl" id="btnPlayerLoop" title="Lặp lại bài hát (Loop)">
+              <i class="fas fa-repeat"></i>
+            </button>
+            <!-- Rewind 5s -->
+            <button class="btn-player-ctrl" id="btnPlayerRewind" title="Tua lùi 5 giây">
+              <i class="fas fa-rotate-left"></i>
+            </button>
+            <!-- Previous Track -->
+            <button class="btn-player-ctrl" id="btnPlayerPrev" title="Bài trước">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <!-- Play / Pause Main Button -->
+            <button class="btn-player-play" id="btnPlayerPlay" title="Phát hoặc Tạm dừng">
+              <i class="fas fa-play"></i>
+            </button>
+            <!-- Next Track -->
+            <button class="btn-player-ctrl" id="btnPlayerNext" title="Bài tiếp theo">
+              <i class="fas fa-step-forward"></i>
+            </button>
+            <!-- Forward 5s -->
+            <button class="btn-player-ctrl" id="btnPlayerForward" title="Tua tới 5 giây">
+              <i class="fas fa-rotate-right"></i>
+            </button>
+            <!-- Speed Toggle -->
+            <button class="btn-player-ctrl" id="btnPlayerSpeed" title="Tốc độ phát">
+              1.0x
+            </button>
+          </div>
+
+          <!-- Timeline scrubber -->
+          <div class="player-timeline-row">
+            <span class="time-display" id="playerCurrentTime">00:00</span>
+            <div class="timeline-slider-wrap">
+              <input type="range" class="timeline-slider" id="playerTimeline" min="0" max="222" value="0" step="1" aria-label="Thanh tiến trình thời gian bài hát" />
+            </div>
+            <span class="time-display" id="playerDuration">03:42</span>
+          </div>
+        </div>
+
+        <!-- Right: Real-time Audio Waveform & Volume -->
+        <div class="player-right-panel">
+          <canvas class="waveform-canvas" id="waveformCanvas" width="100" height="32" title="Sóng âm thanh trực quan"></canvas>
+
+          <div class="volume-wrap">
+            <button class="btn-volume-icon" id="btnVolumeIcon" title="Tắt / Bật tiếng">
+              <i class="fas fa-volume-up"></i>
+            </button>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="0.85" aria-label="Âm lượng" />
+          </div>
+
+          <button class="btn-player-lyrics-open" id="btnPlayerOpenLyrics" title="Mở bảng lời ca 3 cột">
+            <i class="fas fa-file-lines"></i> Lời ca
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION COMPONENT
+       ========================================================================== -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fas fa-info-circle"></i>
+    <span id="toastMessage">Thông báo di sản</span>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>THANH ÂM SLI – LƯỢN</h4>
+          <p>
+            Cổng thông tin số hóa phi lợi nhuận lưu giữ và tôn vinh những giá trị văn hóa âm nhạc cổ truyền của cộng đồng người Tày và người Nùng vùng Đông Bắc Việt Nam.
+          </p>
+          <div style="margin-top: 14px; display: flex; gap: 12px;">
+            <span style="font-size: 0.8rem; background: rgba(212, 175, 55, 0.2); padding: 4px 8px; border-radius: 4px; color: var(--color-gold);">
+              <i class="fas fa-heart"></i> Tình yêu di sản Việt Bắc
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Liên Kết Nhanh</h5>
+          <ul class="footer-links-list">
+            <li><a href="#trang-chu">Trang chủ</a></li>
+            <li><a href="#thu-vien-loi-ca">Thư viện lời ca 3 cột</a></li>
+            <li><a href="#kho-am-thanh">Kho bản ghi âm dân ca</a></li>
+            <li><a href="#van-hoa-dien-xuong">Bối cảnh diễn xướng</a></li>
+            <li><a href="#vung-mien">Khám phá vùng miền</a></li>
+            <li><a href="https://github.com/thanhlpph51442-png/H-t-Sli-h-t-L-n-v-d-n-ca-T-y-N-ng" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Mã nguồn GitHub Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5>Nguồn Tư Liệu &amp; Tham Khảo</h5>
+          <ul class="footer-links-list">
+            <li><a href="#gioi-thieu">Sở VHTT&amp;DL các tỉnh Đông Bắc</a></li>
+            <li><a href="#gioi-thieu">Hội Văn nghệ Dân gian Việt Nam</a></li>
+            <li><a href="#gioi-thieu">Kho tàng Văn học Dân gian Tày - Nùng</a></li>
+            <li><a href="#gioi-thieu">Các Nghệ nhân Dân gian &amp; Nghệ nhân Ưu tú</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>THANH ÂM SLI – LƯỢN</strong>. Bảo tồn và lan tỏa di sản văn hóa dân tộc.
+        </div>
+        <div>
+          Thiết kế chuẩn Responsive • Hỗ trợ ký âm &amp; phiên âm di sản
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="data.js"></script>
+  <script src="audio-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyHG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1C20" />
+      <stop offset="40%" stop-color="#3F2B96" />
+      <stop offset="80%" stop-color="#E86A33" />
+      <stop offset="100%" stop-color="#F2BE22" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#skyHG)" />
+  <!-- Tay Con Linh high mountain peaks -->
+  <polygon points="120,40 30,220 210,220" fill="#222" opacity="0.8" />
+  <polygon points="280,30 170,220 390,220" fill="#1C2D42" opacity="0.9" />
+  <polygon points="460,50 350,220 570,220" fill="#2A1B40" opacity="0.85" />
+  <!-- Swirling cloud layer -->
+  <path d="M 0,140 Q 150,110 300,140 Q 450,170 600,130 L 600,165 Q 450,195 300,165 Q 150,135 0,165 Z" fill="#FAF6F0" opacity="0.4" />
+  <!-- Hoang Su Phi Terraced Rice Fields (Ruộng bậc thang vàng óng) -->
+  <path d="M 0,200 Q 150,185 300,200 Q 450,215 600,190 L 600,225 Q 450,245 300,225 Q 150,205 0,225 Z" fill="#E8AA14" />
+  <path d="M 0,225 Q 150,210 300,230 Q 450,245 600,220 L 600,255 Q 450,275 300,255 Q 150,235 0,255 Z" fill="#D4AF37" />
+  <path d="M 0,255 Q 150,240 300,260 Q 450,275 600,250 L 600,300 L 0,300 Z" fill="#8B2500" />
+  <!-- Nung Din Singer Silhouette on ridge -->
+  <g transform="translate(480, 160) scale(0.7)" fill="#1C2D42">
+    <circle cx="20" cy="5" r="7" />
+    <!-- Turban headwear (Khăn xếp Nùng Dín) -->
+    <ellipse cx="20" cy="2" rx="11" ry="5" fill="#D4AF37" />
+    <path d="M 12,12 L 28,12 L 34,45 L 6,45 Z" fill="#1C2D42" />
+    <!-- Hand raised singing gesture -->
+    <line x1="28" y1="20" x2="42" y2="12" stroke="#1C2D42" stroke-width="3" stroke-linecap="round" />
+  </g>
+  <!-- Foreground Trim -->
+  <line x1="0" y1="294" x2="600" y2="294" stroke="#D4AF37" stroke-width="3" />
+  <text x="30" y="50" font-family="'Noto Serif', serif" font-weight="bold" font-size="28" fill="#FAF6F0">HÀ GIANG</text>
+  <text x="30" y="75" font-family="sans-serif" font-size="14" fill="#D4AF37" letter-spacing="2">SLI NÙNG DÍN HOÀNG SU PHÌ &amp; TÂY CÔN LĨNH</text>
+</svg>
+

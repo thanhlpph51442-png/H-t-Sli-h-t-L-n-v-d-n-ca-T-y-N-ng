@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyLS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D1E2F" />
+      <stop offset="60%" stop-color="#9E2A2B" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#skyLS)" />
+  <!-- To Thi Mountain / Ky Cung River landscape -->
+  <path d="M 0,210 Q 80,70 160,210 Q 240,130 330,220 Q 420,80 520,210 Q 560,160 600,210 L 600,300 L 0,300 Z" fill="#1C2D42" opacity="0.9" />
+  <!-- Vọng Phu / Nàng Tô Thị Silhouette on karst peak -->
+  <path d="M 160,95 C 160,85 168,80 172,83 C 176,86 174,95 170,105 C 167,112 165,120 162,130 Z" fill="#D4AF37" />
+  <!-- Ky Lua Market Pavilion silhouette -->
+  <g transform="translate(360, 160) scale(0.85)" fill="#FAF6F0">
+    <polygon points="50,15 0,45 100,45" fill="#8B2500" />
+    <polygon points="50,3 10,25 90,25" fill="#D4AF37" />
+    <rect x="20" y="45" width="60" height="30" fill="#3D2314" />
+    <line x1="28" y1="45" x2="28" y2="75" stroke="#FAF6F0" stroke-width="2" />
+    <line x1="48" y1="45" x2="48" y2="75" stroke="#FAF6F0" stroke-width="2" />
+    <line x1="72" y1="45" x2="72" y2="75" stroke="#FAF6F0" stroke-width="2" />
+  </g>
+  <!-- Foreground Bridge Ky Cung -->
+  <path d="M 0,260 Q 300,220 600,260 L 600,300 L 0,300 Z" fill="#1B4332" />
+  <line x1="0" y1="294" x2="600" y2="294" stroke="#D4AF37" stroke-width="3" />
+  <text x="30" y="50" font-family="'Noto Serif', serif" font-weight="bold" font-size="28" fill="#FAF6F0">LẠNG SƠN</text>
+  <text x="30" y="75" font-family="sans-serif" font-size="14" fill="#D4AF37" letter-spacing="2">THỦ PHỦ SLI GIANG &amp; CHỢ KỲ LỪA</text>
+</svg>
+

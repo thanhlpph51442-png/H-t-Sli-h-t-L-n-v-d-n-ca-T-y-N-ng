@@ -467,6 +467,36 @@
   </section>
 
   <!-- ==========================================================================
+       TỪ ĐIỂN THUẬT NGỮ DI SẢN (HERITAGE GLOSSARY)
+       ========================================================================== -->
+  <section class="section-wrapper" id="tu-dien-di-san">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-eyebrow">Tra cứu ngôn ngữ &amp; Phong tục</span>
+        <h3 class="section-title">Từ Điển Thuật Ngữ <span>Di Sản Tày Nùng</span></h3>
+        <p class="section-desc">Giải nghĩa những khái niệm, tên gọi làn điệu và các phong tục cổ truyền đặc sắc trong không gian văn hóa dân ca Đông Bắc.</p>
+        <div class="header-accent-line">
+          <i class="fas fa-spell-check header-accent-icon"></i>
+        </div>
+      </div>
+
+      <div class="glossary-search-wrap">
+        <div class="search-input-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="glossarySearchInput" class="search-input" placeholder="Tìm kiếm thuật ngữ (Sli, Lượn, Bắt lờn, Tính tẩu, Lồng tồng...)" />
+        </div>
+      </div>
+
+      <div class="glossary-grid" id="glossaryGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Brocade Divider -->
+  <div class="brocade-border"></div>
+
+  <!-- ==========================================================================
        KHÁM PHÁ VĂN HÓA THEO VÙNG MIỀN (CORE FEATURE 4)
        ========================================================================== -->
   <section class="section-wrapper alt-bg" id="vung-mien">
@@ -479,6 +509,49 @@
         </p>
         <div class="header-accent-line">
           <i class="fas fa-map header-accent-icon"></i>
+        </div>
+      </div>
+
+      <!-- Interactive Northeast Heritage Map -->
+      <div class="northeast-map-box">
+        <div style="text-align: center; margin-bottom: 16px;">
+          <h4 style="font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-gold-light);"><i class="fas fa-map-marked-alt"></i> BẢN ĐỒ TƯƠNG TÁC 5 MIỀN DI SẢN ĐÔNG BẮC</h4>
+          <p style="font-size: 0.85rem; color: var(--color-parchment-dark);">Nhấp chuột vào một địa phương trên sơ đồ để khám phá ngay làn điệu và câu chuyện nguồn cội</p>
+        </div>
+        <div class="map-svg-container">
+          <svg viewBox="0 0 760 180" width="100%" height="100%" id="northeastMapSvg">
+            <!-- Province nodes -->
+            <g class="map-region-node active" data-region-id="reg-caobang" transform="translate(480, 20)">
+              <rect width="180" height="65" rx="8" fill="#1C2D42" stroke="#D4AF37" stroke-width="1.5" />
+              <text x="90" y="32" class="map-node-label">CAO BẰNG</text>
+              <text x="90" y="50" font-size="11" fill="#D4AF37" text-anchor="middle">Lượn Slương • Nàng Hai</text>
+            </g>
+            <g class="map-region-node" data-region-id="reg-langson" transform="translate(480, 100)">
+              <rect width="180" height="65" rx="8" fill="#1C2D42" stroke="#D4AF37" stroke-width="1.5" />
+              <text x="90" y="32" class="map-node-label">LẠNG SƠN</text>
+              <text x="90" y="50" font-size="11" fill="#D4AF37" text-anchor="middle">Sli Giang • Chợ Kỳ Lừa</text>
+            </g>
+            <g class="map-region-node" data-region-id="reg-backan" transform="translate(260, 60)">
+              <rect width="180" height="65" rx="8" fill="#1C2D42" stroke="#D4AF37" stroke-width="1.5" />
+              <text x="90" y="32" class="map-node-label">BẮC KẠN</text>
+              <text x="90" y="50" font-size="11" fill="#D4AF37" text-anchor="middle">Hồ Ba Bể • Xuân Dương</text>
+            </g>
+            <g class="map-region-node" data-region-id="reg-tuyenquang" transform="translate(60, 100)">
+              <rect width="180" height="65" rx="8" fill="#1C2D42" stroke="#D4AF37" stroke-width="1.5" />
+              <text x="90" y="32" class="map-node-label">TUYÊN QUANG</text>
+              <text x="90" y="50" font-size="11" fill="#D4AF37" text-anchor="middle">Lượn Cọi • Quan Làng</text>
+            </g>
+            <g class="map-region-node" data-region-id="reg-hagiang" transform="translate(60, 20)">
+              <rect width="180" height="65" rx="8" fill="#1C2D42" stroke="#D4AF37" stroke-width="1.5" />
+              <text x="90" y="32" class="map-node-label">HÀ GIANG</text>
+              <text x="90" y="50" font-size="11" fill="#D4AF37" text-anchor="middle">Sli Nùng Dín • Ruộng bậc thang</text>
+            </g>
+            <!-- Connecting dashed lines -->
+            <line x1="240" y1="52" x2="260" y2="85" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" />
+            <line x1="240" y1="132" x2="260" y2="95" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" />
+            <line x1="440" y1="92" x2="480" y2="52" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" />
+            <line x1="440" y1="92" x2="480" y2="132" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" />
+          </svg>
         </div>
       </div>
 

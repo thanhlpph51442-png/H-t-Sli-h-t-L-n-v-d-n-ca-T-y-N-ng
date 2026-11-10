@@ -1,6 +1,7 @@
 # THANH ÂM SLI – LƯỢN | DI SẢN DÂN CA TÀY NÙNG
 
-> **Slogan:** *“Lưu giữ tiếng hát – Gìn giữ hồn văn hóa Tày Nùng”*
+> **Slogan:** *“Lưu giữ tiếng hát – Gìn giữ hồn văn hóa Tày Nùng”*  
+> **Kho lưu trữ GitHub:** [https://github.com/thanhlpph51442-png/H-t-Sli-h-t-L-n-v-d-n-ca-T-y-N-ng](https://github.com/thanhlpph51442-png/H-t-Sli-h-t-L-n-v-d-n-ca-T-y-N-ng)
 
 ---
 
